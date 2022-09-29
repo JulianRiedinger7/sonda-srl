@@ -238,6 +238,10 @@ footer .contacto .telefono {
 /* Media Queries */
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  main{
+    background-attachment: unset;
+  }
+
   .mobile {
     display: block;
   }
