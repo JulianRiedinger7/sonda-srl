@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* 
+  Blue Primary: #2174A0
+  #347FA7
+  #3C4467
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header,
+footer {
+  background-color: #041735;
+  color: #fff;
+  height: 70px;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger,
+.cerrar {
+  width: 50px;
+  cursor: pointer;
+}
+
+.cerrar {
+  align-self: flex-end;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100vh - 140px);
+  background: url(../images/hero.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 120px;
+  background-image: linear-gradient( #429ccc, #1e3355);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: .5px #202020;
+  margin-bottom: 0;
+}
+
+
+.sponsors {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-self: flex-end;
+  flex: 1;
+}
+
+.sponsors h2{
+  font-size: 30px;
+  color: #202020;
+  margin: 0;
+  text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+          1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.sponsors img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.sponsors div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors div {
+  color: #fff;
+}
+
+.emerson, .fitok{
+  align-self: flex-end;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer .ubicacion {
+  display: flex;
+  align-items: center;
+}
+
+footer .contacto {
+  display: flex;
+  gap: 20px;
+}
+
+footer .contacto a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .contacto .telefono {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Productos */
+
+
+.productos{
+  min-height: calc(100vh - 160px);
+}
+
+.productos ul{
+  list-style: none;
+}
+
+.productos .bullet::before{
+  content: "•";
+}
+
+.productos .down-arrow, .productos .up-arrow{
+  width: 30px;
+  cursor: pointer;
+}
+
+.productos .dropdown{
+  display: flex;
+  align-items: center;
+}
+
+/* Somos */
+
+.somos h1{
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+.history-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.history-container p {
+  text-shadow: 0.8px 0 #fff, -0.8px 0 #fff, 0 0.8px #fff, 0 -0.8px #fff,
+          0.8px 0.8px #fff, -0.8px -0.8px #fff, 0.8px -0.8px #fff, -0.8px 0.8px #fff;
+  font-size: 22px;
+  line-height: 30px;
+  width: 60%;
+  /* background-color: #efefef; */
+}
+
+.history-container img{
+  width: 400px;
+}
+
+.history-container:not(:last-child){
+  margin-bottom: 50px;
+}
+
+.history-container .right{
+  order: 2;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .emerson, .fitok{
+    width: 100%;
+  }
+
+  .sponsors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    font-size: 60px;
+  }
+
+  footer {
+    height: auto;
+    flex-direction: column;
+  }
+
+  footer .contacto {
+    justify-content: space-between;
+    width: 100%;
+    gap: 0px;
+  }
+
+  /* Somos */
+  .history-container{
+    margin-bottom: 100px;
+  }
+
+  .history-container p {
+    width: 90%;
+  }
+
+  .history-container img{
+    width: 300px;
+    order: 2;
+  }
+
+  .history-container .right{
+    order: -1;
+  }
+}
+
+
+/* Utilities Classes */
+
+.d-none {
+  display: none;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.d-block {
+  display: block;
+}
+
+.short{
+  width: 60%;
+}
