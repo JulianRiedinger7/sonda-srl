@@ -213,12 +213,15 @@ footer .contacto .telefono {
 }
 
 .history-container p {
-  text-shadow: 0.8px 0 #fff, -0.8px 0 #fff, 0 0.8px #fff, 0 -0.8px #fff,
-          0.8px 0.8px #fff, -0.8px -0.8px #fff, 0.8px -0.8px #fff, -0.8px 0.8px #fff;
+  text-shadow: 0.8px 0 #202020, -0.8px 0 #202020, 0 0.8px #202020, 0 -0.8px #202020,
+          0.8px 0.8px #202020, -0.8px -0.8px #202020, 0.8px -0.8px #202020, -0.8px 0.8px #202020;
   font-size: 22px;
   line-height: 30px;
   width: 60%;
-  /* background-color: #efefef; */
+  color: #efefef;
+  background-color: #6C63FF;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .history-container img{
@@ -274,20 +277,24 @@ footer .contacto .telefono {
     gap: 0px;
   }
 
+}
+
+@media screen and (max-width: 1024px){
+  
   /* Somos */
   .history-container{
     margin-bottom: 100px;
   }
-
+  
   .history-container p {
     width: 90%;
   }
-
+  
   .history-container img{
     width: 300px;
     order: 2;
   }
-
+  
   .history-container .right{
     order: -1;
   }
