@@ -174,7 +174,13 @@ footer .contacto .telefono {
 
 
 .productos{
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 135px);
+}
+
+.products-title{
+  margin-top: 0px;
+  text-align: center;
+  font-size: 80px;
 }
 
 .productos ul{
@@ -193,6 +199,73 @@ footer .contacto .telefono {
 .productos .dropdown{
   display: flex;
   align-items: center;
+}
+
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.product-card{
+  width: 300px;
+  border: 2px solid #041735;
+  border-radius: 20px;
+}
+
+.product-card-content{
+  padding: 20px;
+}
+
+.product-card img{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.product-card button{
+  color: #fafafa;
+  background-color: #041735;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  transition: all .2s ease-in-out;
+}
+
+.product-card button:hover{
+  opacity: .85;
+}
+
+.product-description{
+  padding: 0px 20px;
+}
+
+.product-description .product{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.product-description .product img {
+  width: 400px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.product-description .product p{
+  margin: 0 auto;
+}
+
+.product-description .description-arrow{
+  width: 100px;
+  cursor: pointer;
 }
 
 /* Somos */
@@ -275,6 +348,17 @@ footer .contacto .telefono {
     justify-content: space-between;
     width: 100%;
     gap: 0px;
+  }
+
+  /* Productos */
+
+  .product-description .product{
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .product-description .product img{
+    width: 300px;
   }
 
 }
